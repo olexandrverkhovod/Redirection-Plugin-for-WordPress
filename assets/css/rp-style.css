@@ -1,0 +1,45 @@
+body ul,
+body ol {
+    margin: 0;
+}
+
+body #wpcontent ul:not(#wp-admin-bar-root-default),
+body #wpcontent ol:not(#wp-admin-bar-root-default) {
+    margin: 0 0 10px 25px;
+}
+.typical-btn {
+    align-self: flex-end;
+    width: 30px;
+    height: 25px;
+    margin-bottom: 40px;
+    margin-left: -50px;
+}
+
+.block-content {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.wrap {
+    width: 1083px;
+}
+
+.block-wrapper {
+    margin: 0 20px;
+}
+
+input[type="checkbox"] {
+    margin: 0 8px 0 0 !important;
+}
+
+label.check {
+    margin-bottom: 10px;
+}
+
+form{
+    margin: 0 0 40px;
+}
+
+input[value="Delete"]{
+    margin-left: 8px;
+}
