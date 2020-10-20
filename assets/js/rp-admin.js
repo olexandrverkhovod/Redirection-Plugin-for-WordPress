@@ -40,10 +40,12 @@ jQuery(document).ready(function ($) {
             e.preventDefault();
             let parent = $(this).parent('form');
             let blockID = $(parent).parent('.block-wrapper').attr('id').slice(5);
-            if ($(this).parent('form').parent('.block-wrapper').is('.block-wrapper:last')) {
+            let lastBlock = $(this).parent('form').parent('.block-wrapper').parent('#b-content').find('.block-wrapper').length;
+            if (lastBlock == 1) {
                 $(parent).children('input[type="text"]').each(function () {
                     $(this).attr('value', '');
                 });
+                $(parent).find('[name="cenable"]').prop("checked", false);
                 $(this).siblings('input[type="submit"]').val('Save');
                 $(this).remove();
             } else {
